@@ -26,9 +26,9 @@ app.use(clerkMiddleware());
 //API to listen to clerk webhooks
 app.use("/api/clerk",clerkWebHooks);
 app.use("/api/user", userRouter);
-app.use("/api/hotel ", hotelRouter);
-app.use("/api/room ", roomRouter);
-app.use("/api/bookings ", bookingRouter);
+app.use("/api/hotel", hotelRouter);
+app.use("/api/room", roomRouter);
+app.use("/api/bookings", bookingRouter);
 
 // Routes
 app.get("/", (req, res) => {
