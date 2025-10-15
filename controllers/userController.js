@@ -13,7 +13,7 @@ export const getUserData = async (req, res) => {
 }
 
 //store User Recent Search Cities
-export const storeUserRecentSearchCities = async () => {
+export const storeUserRecentSearchCities = async (req, res) => {
     try {
         const {recentSearchedCities} = req.body;
         const user = await req.user;
