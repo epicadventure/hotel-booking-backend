@@ -24,7 +24,7 @@ app.use(express.json()); // Parse JSON bodies
 app.use(clerkMiddleware());
 
 //API to listen to clerk webhooks
-app.use("/api/clerk",clerkWebHooks);
+app.use("/api/clerk", clerkWebHooks);
 app.use("/api/user", userRouter);
 app.use("/api/hotel", hotelRouter);
 app.use("/api/room", roomRouter);

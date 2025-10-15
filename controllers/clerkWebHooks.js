@@ -1,7 +1,7 @@
 import User from "../model/User.js";
 import { Webhook } from "svix";
 
-const clerkWebHooks = async (requestAnimationFrame, res) => {
+const clerkWebHooks = async (req, res) => {
     try {
         //create a svix instanse
         const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
@@ -38,7 +38,7 @@ const clerkWebHooks = async (requestAnimationFrame, res) => {
     }
     catch (error) {
         console.log(`Error in clerkWebHooks : ${error}`);
-        res.status(500).json({ error: "Internal Server Error" });
+        res.status(500).json({ error: "Internal Server Error In WHOOK" });
     }
 
 
