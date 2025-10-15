@@ -4,7 +4,7 @@ import { Webhook } from "svix";
 const clerkWebHooks = async (req, res) => {
     try {
         //create a svix instanse
-        const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
+        const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET)
         const headers = {
             "svix-id": req.headers["svix-id"],
             "svix-time": req.headers["svix-timestamp"],

@@ -12,7 +12,7 @@ export const getUserData = async () => {
     }
 }
 
-//store Usre Recent Search Cities
+//store User Recent Search Cities
 export const storeUserRecentSearchCities = async () => {
     try {
         const {recentSearchedCities} = req.body;

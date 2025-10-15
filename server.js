@@ -10,12 +10,12 @@ import hotelRouter from "./routes/hotelRoute.js";
 import roomRouter from "./routes/roomRoute.js";
 import bookingRouter from "./routes/bookingRouter.js";
 
-const app = express();
 
 // Connect to MongoDB
 connectDB();
 connectCloudinary();
 
+const app = express();
 // Middlewares
 app.use(cors()); // Enable CORS
 
